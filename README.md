@@ -96,9 +96,9 @@ Met à jour un champ Entry configuré en lecture seule.
 
 # Auteur
 
-Emel Keres
-Date : 28/08/2026
-Projet : SI-C3b
+- Emel Keres
+- Date : 28/08/2026
+- Projet : SI-C3b
 
 # Licence
 
