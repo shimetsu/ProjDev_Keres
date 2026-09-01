@@ -1,5 +1,3 @@
-Voici un README professionnel pour ton projet File Explorer en Tkinter basé sur le code fourni.
-
 File Explorer Tkinter
 Description
 
