@@ -15,7 +15,7 @@ Fonctionnalités
 - Parcours récursif des sous-dossiers.
 - Affichage dans un widget Treeview.
 
-Informations sur les fichiers
+# Informations sur les fichiers
 
 Pour chaque fichier sélectionné :
 - Nom
@@ -27,7 +27,7 @@ Pour chaque fichier sélectionné :
 
 Les informations sont affichées dans des champs en lecture seule.
 
-Interface graphique
+# Interface graphique
 
 L'application est organisée en trois sections :
 
@@ -45,7 +45,8 @@ Technologies utilisées
 - platform
 - 
 
-Installation
+# Installation
+
 1. Cloner le projet
 git clone https://github.com/votre-utilisateur/file-explorer.git
 cd file-explorer
@@ -53,7 +54,7 @@ cd file-explorer
 2. Installer les dépendances
 pip install pillow
 
-Exécution
+# Exécution
 
 Lancer le programme :
 
@@ -96,9 +97,9 @@ Met à jour un champ Entry configuré en lecture seule.
 # Auteur
 
 Emel Keres
- Date : 28/08/2026
- Projet : SI-C3b
+Date : 28/08/2026
+Projet : SI-C3b
 
-Licence
+# Licence
 
 Projet pédagogique réalisé dans le cadre d'un apprentissage du développement Python et de l'interface graphique Tkinter.
