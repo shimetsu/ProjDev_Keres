@@ -31,10 +31,14 @@ Les informations sont affichées dans des champs en lecture seule.
 
 L'application est organisée en trois sections :
 
-Section	DescriptionDirectory Tree	Arborescence des dossiers et fichiers
-File Information	Informations détaillées sur le fichier sélectionné
-Information PC	Zone réservée aux informations système
-Technologies utilisées
+# Section	Description
+
+- Directory Tree	Arborescence des dossiers et fichiers
+- File Information	Informations détaillées sur le fichier sélectionné
+- Information PC	Zone réservée aux informations système
+
+# Technologies utilisées
+
 - Python 3
 - Tkinter
 - ttk (Treeview)
