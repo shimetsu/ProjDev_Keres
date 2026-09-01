@@ -83,16 +83,6 @@ Affiche les informations du fichier sélectionné dans les champs dédiés.
 
 Met à jour un champ Entry configuré en lecture seule.
 
-# Améliorations possibles
-
-- Affichage réel des informations système du PC.
-- Tri des fichiers par nom, taille ou date.
-- Barre de recherche.
-- Affichage des icônes selon le type de fichier.
-- Gestion des erreurs d'accès aux dossiers protégés.
-- Double-clic pour ouvrir un fichier.
-- Barre de progression lors du chargement de grands répertoires.
-
 # Auteur
 
 - Emel Keres
