@@ -43,7 +43,6 @@ Technologies utilisées
 - datetime
 - Pillow (PIL)
 - platform
-- 
 
 # Installation
 
