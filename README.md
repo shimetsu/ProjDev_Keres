@@ -9,7 +9,8 @@ L'application propose :
 - Visualisation des informations d'un fichier sélectionné.
 - Interface graphique simple avec plusieurs panneaux.
 - Affichage des informations système du PC (prévu dans la structure du projet).
-Fonctionnalités
+
+## Fonctionnalités
 - Exploration de répertoire
 - Sélection d'un dossier grâce à filedialog.askdirectory().
 - Parcours récursif des sous-dossiers.
