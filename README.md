@@ -1,5 +1,5 @@
 # File Explorer Tkinter
-# Description
+## Description
 
 Application graphique développée en Python avec Tkinter permettant d'explorer l'arborescence d'un répertoire et d'afficher des informations sur les fichiers sélectionnés.
 
@@ -15,7 +15,7 @@ Fonctionnalités
 - Parcours récursif des sous-dossiers.
 - Affichage dans un widget Treeview.
 
-# Informations sur les fichiers
+## Informations sur les fichiers
 
 Pour chaque fichier sélectionné :
 - Nom
@@ -27,17 +27,15 @@ Pour chaque fichier sélectionné :
 
 Les informations sont affichées dans des champs en lecture seule.
 
-# Interface graphique
+## Interface graphique
 
 L'application est organisée en trois sections :
-
-# Section	Description
 
 - Directory Tree	Arborescence des dossiers et fichiers
 - File Information	Informations détaillées sur le fichier sélectionné
 - Information PC	Zone réservée aux informations système
 
-# Technologies utilisées
+## Technologies utilisées
 
 - Python 3
 - Tkinter
@@ -48,7 +46,7 @@ L'application est organisée en trois sections :
 - Pillow (PIL)
 - platform
 
-# Installation
+## Installation
 
 1. Cloner le projet
 git clone https://github.com/votre-utilisateur/file-explorer.git
@@ -57,13 +55,13 @@ cd file-explorer
 2. Installer les dépendances
 pip install pillow
 
-# Exécution
+## Exécution
 
 Lancer le programme :
 
 python fileexplorer.py
 
-# Utilisation
+## Utilisation
 
 - Ouvrir l'application.
 - Dans le menu File, sélectionner Display Directory.
@@ -87,12 +85,12 @@ Affiche les informations du fichier sélectionné dans les champs dédiés.
 
 Met à jour un champ Entry configuré en lecture seule.
 
-# Auteur
+## Auteur
 
 - Emel Keres
 - Date : 28/08/2026
-- Projet : SI-C3b
+- Classe : SI-C3b
 
-# Licence
+## Licence
 
 Projet pédagogique réalisé dans le cadre d'un apprentissage du développement Python et de l'interface graphique Tkinter.
