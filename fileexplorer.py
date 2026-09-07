@@ -87,7 +87,7 @@ def display_directory():
     root_folder = Path(filedialog.askdirectory()) # demander un répertoire
 
     # insérer le noeud racine (déjà ouvert)
-    root_node = tree.insert("","end", text=f"📁 {root_folder.resolve()}",open=True )
+    root_node = tree.insert("", "end", text=f"📁 {root_folder.name}", open=True)
     # garder l'info du chemin complet
     node_paths[root_node] = root_folder
 
@@ -157,7 +157,7 @@ frame_pc.config(bd=0, bg="white")
 # style du file explorer
 style = ttk.Style()
 
-style.configure("Treeview", font=("Arial", 12), rowheight=24)
+style.configure("Treeview", font=("Arial", 12), rowheight=28)
 
 tree = ttk.Treeview(frame_tree)
 tree.heading("#0")
@@ -173,27 +173,27 @@ content_info.pack(fill="both", expand=True, padx=5, pady=5)
 # frame pour les informations sur le fichier
 tk.Label(content_info, text="name").pack(pady=(10,0))
 entry_name = tk.Entry(content_info, state="readonly")
-entry_name.pack(fill="x", padx=10)
+entry_name.pack(fill="x", padx=10, pady=(0,10))
 
 tk.Label(content_info, text="path").pack(pady=(10, 0))
 entry_path = tk.Entry(content_info, state="readonly")
-entry_path.pack(fill="x", padx=10)
+entry_path.pack(fill="x", padx=10, pady=(0,10))
 
 tk.Label(content_info, text="type").pack(pady=(10, 0))
 entry_type = tk.Entry(content_info, state="readonly")
-entry_type.pack(fill="x", padx=10)
+entry_type.pack(fill="x", padx=10, pady=(0,10))
 
 tk.Label(content_info, text="size").pack(pady=(10, 0))
 entry_size = tk.Entry(content_info, state="readonly")
-entry_size.pack(fill="x", padx=10)
+entry_size.pack(fill="x", padx=10, pady=(0,10))
 
 tk.Label(content_info, text="modified").pack(pady=(10, 0))
 entry_date = tk.Entry(content_info, state="readonly")
-entry_date.pack(fill="x", padx=10)
+entry_date.pack(fill="x", padx=10, pady=(0,10))
 
 tk.Label(content_info, text="permissions").pack(pady=(10, 0))
 entry_permissions = tk.Entry(content_info, state="readonly")
-entry_permissions.pack(fill="x", padx=10)
+entry_permissions.pack(fill="x", padx=10, pady=(0,10))
 
 # frame pour les informations sur le pc
 content_pc = tk.Frame(frame_pc, highlightbackground="gray", highlightthickness=1, bg="white")
