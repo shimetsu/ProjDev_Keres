@@ -1,7 +1,6 @@
 # affichage d'un répertoire dans une fenêtre tkinter
 # Emel 28.08.26
 # SI-C3b
-# hello world
 
 import tkinter as tk
 import os
