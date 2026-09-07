@@ -151,7 +151,7 @@ frame_pc.config(bd=0, bg="white")
 # style du file explorer
 style = ttk.Style()
 
-style.configure("Treeview", font=("Arial", 15), rowheight=24)
+style.configure("Treeview", font=("Arial", 12), rowheight=24)
 
 tree = ttk.Treeview(frame_tree)
 tree.heading("#0")
