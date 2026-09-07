@@ -1,6 +1,13 @@
-# affichage d'un répertoire dans une fenêtre tkinter
-# Emel 28.08.26
-# SI-C3b
+"""
+Name : fileexplorer.py
+
+Author : Emel Keres
+
+Date : 07.09.2026
+
+Purpose : Projet File Explorer Tkinter
+
+"""
 
 import tkinter as tk
 import os
