@@ -110,6 +110,7 @@ def populate_tree(tree, parent, folder):
             populate_tree(tree,node,item)
 
 # fenêtre principale appelée window
+# aide de l'ia pour centrer les objets dans la fenetre 
 window = tk.Tk()
 window.title("file explorer")
 window.geometry("800x600")
@@ -130,8 +131,6 @@ file_menu.add_command(label="display directory", command=display_directory)
 file_menu.add_separator()
 file_menu.add_command(label="quit", command=window.destroy)
 menu_bar.add_cascade(label="file", menu=file_menu)
-menu_bar.add_cascade(label="tools", menu=tk.Menu(menu_bar, tearoff=False))
-menu_bar.add_cascade(label="help", menu=tk.Menu(menu_bar, tearoff=False))
 window.config(menu=menu_bar)
 
 # frame principal pour contenir les 3 frames
