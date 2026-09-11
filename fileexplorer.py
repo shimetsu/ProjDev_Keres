@@ -9,8 +9,8 @@ Purpose : Projet File Explorer Tkinter
 
 """
 
-import tkinter as tk
-import os
+import tkinter as tk # pour l'interface graphique
+import os # pour les permissions
 from tkinter import ttk # pour le treeview
 from tkinter import filedialog # boite dialogue pour chercher un répertoire
 from pathlib import Path # fonctions de répertoire
