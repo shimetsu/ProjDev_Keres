@@ -56,9 +56,7 @@ def display_file_info(event):
     size = f"{size_kb:.2f} KB"
 
     # date de modification
-    modified = datetime.fromtimestamp(
-        file_info.st_mtime
-    ).strftime("%d.%m.%Y")
+    modified = datetime.fromtimestamp(file_info.st_mtime).strftime("%d.%m.%Y")
 
     # permissions
     permissions = []
@@ -128,22 +126,15 @@ def get_cpu_info():
 # informations Windows
 def get_os_info():
     try:
-        key = winreg.OpenKey(
-            winreg.HKEY_LOCAL_MACHINE,
-            r"SOFTWARE\Microsoft\Windows NT\CurrentVersion"
-        )
+        key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,r"SOFTWARE\Microsoft\Windows NT\CurrentVersion")
         edition = winreg.QueryValueEx(key, "ProductName")[0]
         try:
             version = winreg.QueryValueEx(key, "DisplayVersion")[0]
         except:
             version = "Unknown"
-        install_timestamp = winreg.QueryValueEx(
-            key,
-            "InstallDate"
-        )[0]
-        install_date = datetime.fromtimestamp(
-            install_timestamp
-        ).strftime("%d.%m.%Y")
+
+        install_timestamp = winreg.QueryValueEx(key,"InstallDate")[0]
+        install_date = datetime.fromtimestamp(install_timestamp).strftime("%d.%m.%Y")
         return edition, version, install_date
     except Exception:
         return "Unknown", "Unknown", "Unknown"
@@ -212,7 +203,7 @@ tree.pack(fill="both", expand=True, padx=5, pady=5)
 tree.bind("<<TreeviewSelect>>", display_file_info)
 
 # frame avec contour gris pour les informations sur le fichier
-content_info = tk.Frame(frame_info, bg="white")
+content_info = tk.Frame(frame_info, highlightbackground="gray", highlightthickness=1, bg="white")
 content_info.pack(fill="both", expand=True, padx=5, pady=5)
 
 # frame pour les informations sur le fichier
@@ -241,7 +232,7 @@ entry_permissions = tk.Entry(content_info, state="readonly")
 entry_permissions.pack(fill="x", padx=10, pady=(0,10))
 
 # frame pour les informations sur le pc
-content_pc = tk.Frame(frame_pc, bg="white")
+content_pc = tk.Frame(frame_pc, highlightbackground="gray", highlightthickness=1, bg="white")
 content_pc.pack(fill="both", expand=True, padx=5, pady=5)
 
 # frame pour les informations sur le processeur
@@ -282,7 +273,7 @@ lbl_usage.pack(side="right")
 
 # frame pour les informations sur le système d'exploitation
 frame_os = tk.LabelFrame(content_pc, text="os", bg="white")
-frame_os.pack(fill="both", expand=True, padx=10, pady=(0, 10))
+frame_os.pack(fill="both", expand=True, padx=10, pady=(0, 200))
 frame_os.config(height=220)
 frame_os.pack_propagate(False)
 
